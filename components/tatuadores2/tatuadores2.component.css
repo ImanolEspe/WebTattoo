@@ -1,0 +1,38 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 35, 35);
+    min-height: 100vh; /* Ajusta la altura mínima al 100% del viewport */
+    position: relative; /* Para que los elementos absolutamente posicionados respeten este contenedor */
+}
+
+.contenedor-imagen {
+    width: 45%; /* Ajusta el ancho de las imágenes para dispositivos grandes */
+    margin: 10px; /* Añade un margen entre las imágenes */
+    position: relative; /* Establece el contexto de posicionamiento para los elementos internos */
+}
+
+.contenedor-imagen img {
+    width: 100%; /* Ajusta el ancho de la imagen para que ocupe toda la casilla */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block; /* Asegura que la imagen no tenga espacios en blanco debajo */
+}
+
+.nombre-imagen {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Recta';
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor-imagen {
+        width: 90%; /* Ajusta el ancho de las imágenes para dispositivos pequeños */
+    }
+}

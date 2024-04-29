@@ -1,0 +1,26 @@
+<div>
+    <div class="container">
+        <section *ngFor="let tattoo of tatuajes" class="profile">
+            <img src= {{tattoo.rutaImagen}}>
+            <h1>{{tattoo.nombre}}</h1>
+            <p class="style"> {{tattoo.estilo}}</p>
+            <p class="description"> {{tattoo.description}} </p>
+        </section>
+        <section class="designsCreated">
+             <h2>Diseños realizados</h2>
+             <div class= "galeria" *ngFor="let tatuaje of tatuajes">
+                <div *ngFor="let imagen of tatuaje.galeria" >
+                    <img [src]= "imagen" >
+                </div>
+             </div>
+        </section>
+        <section class="designsAvailable">
+              <h2>Diseños disponibles</h2>
+              <div class= "galeriaDiseno" *ngFor="let tatuaje of tatuajes">
+                <div *ngFor="let diseno of tatuaje.galeriaDesign" >
+                    <img [src]= "diseno" >
+                </div>
+              </div>
+        </section>
+    </div>
+</div>

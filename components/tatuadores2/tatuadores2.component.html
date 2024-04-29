@@ -1,0 +1,9 @@
+<div class="contenedor">
+    <div *ngFor="let tatuador of tatuadores" class="contenedor-imagen">
+        <a (click)="click(tatuador.nombre)">
+            <img src={{tatuador.rutaImagen}}>
+            <div class="nombre-imagen">{{tatuador.nombre}} / {{tatuador.estilo}} </div>
+        </a>
+    </div>
+</div>
+

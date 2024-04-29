@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 35, 35);
+    justify-content:space-around;
+    padding: 20px
+    
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    color: #9f9090;
+    margin-bottom: 10px;
+    font-family: 'Recta';
+}
+
+.profile p {
+    font-size: 20px;
+    color: #9f9090;
+    margin-bottom: 10px;
+    font-family: 'Recta';
+}
+
+.designsCreated,
+.designsAvailable {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.designsCreated h2,
+.designsAvailable h2 {
+    background-color: black;
+    font-family: 'Recta';
+    color: rgb(213, 209, 205);
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.galeria {
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas */
+    gap: 10px; /* Espacio entre las imágenes */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+
+.galeria div {
+    width: calc(20% - 10px); /* Calcular el ancho de cada imagen */
+    flex-grow: 1; /* Permitir que las imágenes se expandan para ocupar el espacio disponible */
+}
+
+.galeria img {
+    width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-height: 300px; /* Establecer una altura máxima para las imágenes */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+
+.galeriaDiseno {
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas */
+    gap: 10px; /* Espacio entre las imágenes */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+
+.galeriaDiseno div {
+    width: calc(20% - 10px); /* Calcular el ancho de cada imagen */
+    flex-grow: 1; /* Permitir que las imágenes se expandan para ocupar el espacio disponible */
+}
+
+.galeriaDiseno img {
+    width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-height: 300px; /* Establecer una altura máxima para las imágenes */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+
+.description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    width: 100%;
+}
+
+.style {
+    text-decoration: underline;
+}
