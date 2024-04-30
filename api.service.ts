@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Cliente } from './cliente.model'; // Asegúrate de importar tu modelo de cliente
+import { Cliente } from './cliente.model'; 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'http://localhost:5000'; // La URL de tu backend Flask
+  private apiUrl = 'http://localhost:5000'; //  URL Flask
 
   constructor(private http: HttpClient) { }
 

@@ -3,6 +3,7 @@ import { HomeComponent } from './components/home/home.component';
 import { TatuajesComponent } from './components/tatuajes/tatuajes.component';
 import { Tatuadores2Component } from './components/tatuadores2/tatuadores2.component';
 import { TatuadorComponent } from './components/tatuador/tatuador.component';
+import { CitasComponent } from './components/citas1/citas.component';
 
 
 
@@ -27,5 +28,9 @@ export const routes: Routes = [
     {
         path: 'tatuador',
         component: TatuadorComponent
+    },
+    {
+        path: 'citas',
+        component: CitasComponent
     }
 ];
