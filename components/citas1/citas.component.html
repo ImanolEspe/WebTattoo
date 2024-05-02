@@ -1,4 +1,5 @@
-<form (submit)="agregarCliente()">
+<div>
+<form (ngSubmit)="agregarCliente()">
     <div>
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" [(ngModel)]="nuevoCliente.nombre" required>
@@ -21,3 +22,4 @@
     </div>
     <button type="submit">Agregar Cliente</button>
   </form>
+</div>

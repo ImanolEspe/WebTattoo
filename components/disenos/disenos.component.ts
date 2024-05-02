@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 import { TatuajesInterface } from '../../interfaces/tatuajes.interface';
 import { NgFor, NgIf } from '@angular/common';
 
+
 @Component({
-  selector: 'app-tatuador',
+  selector: 'app-disenos',
   standalone: true,
   imports: [NgFor, NgIf],
-  templateUrl: './tatuador.component.html',
-  styleUrl: './tatuador.component.css'
+  templateUrl: './disenos.component.html',
+  styleUrl: './disenos.component.css'
 })
-export class TatuadorComponent {
+export class DisenosComponent {
 
   public tatuajes: TatuajesInterface[]=[
   {    

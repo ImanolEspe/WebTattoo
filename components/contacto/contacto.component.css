@@ -1,0 +1,55 @@
+.container {
+    display: flex; /* Usamos flexbox */
+    width: 100%; 
+    height: 100vh;
+    background-color: rgb(36, 35, 35);
+}
+
+.ubicacion {
+    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    margin-right: 5px; /* Margen entre los elementos */
+    background-color: rgb(24, 25, 25);
+    border-radius: 20px;
+}
+
+.texto {
+    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    background-color: rgb(24, 25, 25);
+    border-radius: 20px;
+    color: rgb(211, 205, 205);
+    font-family: 'Recta';
+    font-size: 3em;
+    padding: 10px;
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Mostrar los elementos en columna */
+    align-items: center; /* Centrar verticalmente */
+    width: 80%; /* Ocupa el 80% del contenedor */
+    margin-right: 5px; /* Margen entre los elementos */
+    margin-bottom: 10px;
+}
+
+.texto img {
+    width: 50%; /* Tamaño de la imagen */
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 10px; /* Agregamos un borde redondeado a la imagen */
+}
+
+/* Reglas de medios para dispositivos con un ancho máximo de 768px (tablets y móviles en orientación vertical) */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        height: auto; /* Altura automática */
+    }
+
+    .ubicacion, .texto {
+        width: 100%; /* Ancho completo */
+        margin-right: 0; /* Sin margen */
+        border-radius: 0; /* Sin borde redondeado */
+    }
+
+    .texto img {
+        width: 100%; /* Ancho completo */
+        margin-bottom: 10px; /* Margen inferior más pequeño */
+        border-radius: 0; /* Sin borde redondeado */
+    }
+}

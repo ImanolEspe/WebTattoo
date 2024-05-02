@@ -18,6 +18,9 @@
     width: 100%; /* Ajusta el ancho de la imagen para que ocupe toda la casilla */
     height: auto; /* Mantiene la proporción de aspecto de la imagen */
     display: block; /* Asegura que la imagen no tenga espacios en blanco debajo */
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: antiquewhite;
 }
 
 .nombre-imagen {

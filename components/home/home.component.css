@@ -2,46 +2,57 @@
 .container {    
     display: flex; 
     flex-direction: column;
-    background-size: cover; 
-    background-position: center;
+    background-size: cover; /* Puedes eliminar esta línea si deseas */
+    background-position: center; /* Puedes eliminar esta línea si deseas */
     font-family: 'Recta';
-    background-color:#2e2d2d;
+    background-color: #2e2d2d;
     margin: 0;
-    padding: 0;
-    justify-content:center;
+    padding: 0; /* Elimina el relleno para que el fondo cubra toda la pantalla */
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Ajusta el contenedor al 100% de la altura de la ventana */
+    overflow: hidden; /* Evita el desbordamiento del contenido */
     
     background-image: url("C:/Users/imano/imanol-app/src/assets/media/pexels-danielabsi-952670.jpg");
 }
+
 h1 {
     color: rgb(211, 205, 205);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Recta';
-    font-size: 50px;
-    padding: 25px;
+    font-size: 3em;
+    padding: 10px;
 }
+
 h2 {
     color: #e6d9d9;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Recta';
-    font-size: 25px;
-    padding: 25px;
+    font-size: 1.5em;
+    padding: 10px;
 }
+
 .logo {
-    margin-bottom: 20px; 
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color:#000000;
 }
+
 .boton-intro {
     display: inline-block;
     background-color: #000000;
     color: #fff;
-    font-size: 18px;
+    font-size: 1em;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    margin-top: 20px;
+    margin-top: 10px;
+    border: 2px;
+    border-color:antiquewhite
 }
+
 .boton-intro:hover {
     background-color: #746c68;
 }
