@@ -7,15 +7,9 @@
 
 .ubicacion {
     flex: 1; /* Cada elemento ocupa el mismo espacio */
-    margin-right: 5px; /* Margen entre los elementos */
     background-color: rgb(24, 25, 25);
     border-radius: 20px;
-}
-
-.texto {
-    flex: 1; /* Cada elemento ocupa el mismo espacio */
-    background-color: rgb(24, 25, 25);
-    border-radius: 20px;
+    border-width: 5px;
     color: rgb(211, 205, 205);
     font-family: 'Recta';
     font-size: 3em;
@@ -26,9 +20,31 @@
     width: 80%; /* Ocupa el 80% del contenedor */
     margin-right: 5px; /* Margen entre los elementos */
     margin-bottom: 10px;
+    border: 2px solid;
+    border-color:antiquewhite
+}
+
+.texto {
+    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    background-color: rgb(24, 25, 25);
+    border-radius: 20px;
+    border-width: 5px;
+    color: rgb(211, 205, 205);
+    font-family: 'Recta';
+    font-size: 3em;
+    padding: 10px;
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Mostrar los elementos en columna */
+    align-items: center; /* Centrar verticalmente */
+    width: 80%; /* Ocupa el 80% del contenedor */
+    margin-right: 5px; /* Margen entre los elementos */
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color:antiquewhite
 }
 
 .texto img {
+    margin-top: 20px;
     width: 50%; /* Tamaño de la imagen */
     margin-bottom: 20px; /* Margen inferior */
     border-radius: 10px; /* Agregamos un borde redondeado a la imagen */

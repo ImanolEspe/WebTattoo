@@ -22,6 +22,8 @@
     color: rgb(213, 209, 205);
     margin-bottom: 10px;
     padding: 15px;
+    border-radius: 5px;
+    
 }
 
 .galeria {
@@ -31,6 +33,7 @@
     gap: 10px; /* Espacio entre las imágenes */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+    
 }
 
 .galeria div {
@@ -44,6 +47,8 @@
     max-height: 300px; /* Establecer una altura máxima para las imágenes */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+    border: 2px solid;
+    border-color: antiquewhite;
 }
 
 .galeriaDiseno {
@@ -66,6 +71,8 @@
     max-height: 300px; /* Establecer una altura máxima para las imágenes */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+    border: 2px solid;
+    border-color:black;
 }
 
 .description {

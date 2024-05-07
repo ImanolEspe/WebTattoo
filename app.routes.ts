@@ -14,8 +14,8 @@ export const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: 'home', 
-        pathMatch: 'full',
+        redirectTo: 'home',
+        pathMatch: 'full'
     },
     {
         path: 'tatuadores2',
@@ -32,6 +32,6 @@ export const routes: Routes = [
     {
         path: 'contacto',
         component: ContactoComponent
-    },
+    }
     
 ];
