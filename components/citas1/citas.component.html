@@ -1,25 +1,34 @@
-<div>
-  <form>
-      <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" [(ngModel)]="nuevoCliente.nombre" required>
-      </div>
-      <div>
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" [(ngModel)]="nuevoCliente.apellidos" required>
-      </div>
-      <div>
-        <label for="calle">Calle:</label>
-        <input type="text" id="calle" name="calle" [(ngModel)]="nuevoCliente.calle" required>
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" [(ngModel)]="nuevoCliente.email" required>
-      </div>
-      <div>
-        <label for="numTelefono">Número de Teléfono:</label>
-        <input type="text" id="numTelefono" name="numTelefono" [(ngModel)]="nuevoCliente.numTelefono" required>
-      </div>
-      <!-- <button (click)="agregarCliente()" type="submit">Agregar Cliente</button> -->
-    </form>
+<div class="container">
+  <h1 class="mensaje">Formulario de contacto</h1>
+  <form class="formulario" (ngSubmit)="agregarCliente()">
+    <div class="campo">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" [(ngModel)]="nuevoCliente.nombre" required>
+    </div>
+    <div class="campo">
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" [(ngModel)]="nuevoCliente.apellidos" required>
+    </div>
+    <div class="campo">
+      <label for="calle">Calle:</label>
+      <input type="text" id="calle" name="calle" [(ngModel)]="nuevoCliente.calle" required>
+    </div>
+    <div class="campo">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="nuevoCliente.email" required>
+    </div>
+    <div class="campo">
+      <label for="numTelefono">Número de Teléfono:</label>
+      <input type="text" id="numTelefono" name="numTelefono" [(ngModel)]="nuevoCliente.numTelefono" required>
+    </div>
+    <button class="style" type="submit">Enviar información</button>
+  </form>
+</div>
+
+<!-- Popup de mensaje de confirmación -->
+<div class="popup" *ngIf="mostrarPopup">
+  <div class="popup-contenido">
+    <p class="texto">¡Muchas gracias por contar con nosotros, en breve nos pondremos en contacto contigo!</p>
+    <button class="boton" (click)="cerrarPopup()">OK</button>
   </div>
+</div>

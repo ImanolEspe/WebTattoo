@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { CitasComponent } from './components/citas1/citas.component';
+
 
 
 
@@ -17,7 +17,7 @@ import { CitasComponent } from './components/citas1/citas.component';
         HttpClientModule, 
         FormsModule,
         GoogleMapsModule, 
-        CitasComponent],
+        ],
     providers: [],
     bootstrap: [AppComponent]
     

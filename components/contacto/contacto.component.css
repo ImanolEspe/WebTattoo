@@ -1,12 +1,16 @@
 .container {
-    display: flex; /* Usamos flexbox */
-    width: 100%; 
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(36, 35, 35);
+    padding: 0 20px; /* Agregar un relleno horizontal */
 }
 
-.ubicacion {
-    flex: 1; /* Cada elemento ocupa el mismo espacio */
+.ubicacion, .texto {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 10px auto; /* Centra horizontalmente y agrega márgenes superior e inferior */
     background-color: rgb(24, 25, 25);
     border-radius: 20px;
     border-width: 5px;
@@ -14,58 +18,46 @@
     font-family: 'Recta';
     font-size: 3em;
     padding: 10px;
-    display: flex; /* Utilizar flexbox */
-    flex-direction: column; /* Mostrar los elementos en columna */
-    align-items: center; /* Centrar verticalmente */
-    width: 80%; /* Ocupa el 80% del contenedor */
-    margin-right: 5px; /* Margen entre los elementos */
-    margin-bottom: 10px;
-    border: 2px solid;
-    border-color:antiquewhite
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.texto {
-    flex: 1; /* Cada elemento ocupa el mismo espacio */
-    background-color: rgb(24, 25, 25);
-    border-radius: 20px;
-    border-width: 5px;
-    color: rgb(211, 205, 205);
+button {
+    width: 100%;
+    background-color:  #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-family: 'Recta';
-    font-size: 3em;
-    padding: 10px;
-    display: flex; /* Utilizar flexbox */
-    flex-direction: column; /* Mostrar los elementos en columna */
-    align-items: center; /* Centrar verticalmente */
-    width: 80%; /* Ocupa el 80% del contenedor */
-    margin-right: 5px; /* Margen entre los elementos */
-    margin-bottom: 10px;
-    border: 2px solid;
-    border-color:antiquewhite
+    font-size: 20px;
+}
+button:hover{  
+    background-color: #5c5d5d;
 }
 
+.boton {
+    text-decoration: underline; 
+}
 .texto img {
     margin-top: 20px;
-    width: 50%; /* Tamaño de la imagen */
-    margin-bottom: 20px; /* Margen inferior */
-    border-radius: 10px; /* Agregamos un borde redondeado a la imagen */
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 /* Reglas de medios para dispositivos con un ancho máximo de 768px (tablets y móviles en orientación vertical) */
 @media only screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        height: auto; /* Altura automática */
-    }
-
     .ubicacion, .texto {
-        width: 100%; /* Ancho completo */
-        margin-right: 0; /* Sin margen */
-        border-radius: 0; /* Sin borde redondeado */
+        padding: 10px; /* Agregar relleno para compensar los márgenes del cuerpo */
+        margin-right: 20px; /* Ajustar el margen derecho para evitar que se peguen al borde */
+        margin-left: 20px; /* Ajustar el margen izquierdo para evitar que se peguen al borde */
     }
 
     .texto img {
-        width: 100%; /* Ancho completo */
-        margin-bottom: 10px; /* Margen inferior más pequeño */
-        border-radius: 0; /* Sin borde redondeado */
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 0;
     }
 }

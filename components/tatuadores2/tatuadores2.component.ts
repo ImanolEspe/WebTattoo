@@ -42,7 +42,7 @@ export class Tatuadores2Component {
 
   public click(nombre:string){
     console.log(nombre)
-    this.router.navigateByUrl("disenos")
+    this.router.navigate(['/disenos'], {queryParams: {nombre: nombre}});
   }
   
 

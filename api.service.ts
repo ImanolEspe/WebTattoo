@@ -3,7 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Cliente } from './cliente.model'; 
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ApiService {
   private apiUrl = 'http://localhost:5000'; //  URL Flask
 
