@@ -12,7 +12,6 @@
     align-items: center;
     height: 100vh; /* Ajusta el contenedor al 100% de la altura de la ventana */
     overflow: hidden; /* Evita el desbordamiento del contenido */
-    
     background-image: url("C:/Users/imano/imanol-app/src/assets/media/pexels-danielabsi-952670.jpg");
 }
 

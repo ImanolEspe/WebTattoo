@@ -51,27 +51,24 @@ export class DisenosComponent {
   public tatuajesMostrar: TatuajesInterface[] = [];
   public nombreInput: string | null = "";
 
-  constructor(private route: ActivatedRoute) {
-    this.route.queryParams.subscribe(params => {
-      this.nombreInput = params.;
-      console.log(this.nombreInput)
-    });
-  }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.filtrarTatuajes(this.tatuajes, this.nombreInput)
+    this.route.queryParams.subscribe(params => {
+      this.nombreInput = params['nombre'];
+      if (this.nombreInput) {
+        this.filtrarTatuajes(this.tatuajes, this.nombreInput);
+      } else {
+        this.tatuajesMostrar = this.tatuajes;
+      }
+    });
   }
 
   filtrarTatuajes(lista: TatuajesInterface[], nombre: string | null) {
     if (nombre === null) {
       this.tatuajesMostrar = lista;
     } else {
-      lista.forEach((elem) => {
-        if (nombre === elem.nombre) {
-          this.tatuajesMostrar.push(elem)
-        }
-      });
+      this.tatuajesMostrar = lista.filter(elem => elem.nombre === nombre);
     }
-
   }
 }
