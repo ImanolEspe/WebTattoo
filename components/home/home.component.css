@@ -1,22 +1,62 @@
 
-.container {    
-    display: flex; 
-    flex-direction: column;
-    background-size: cover; /* Puedes eliminar esta línea si deseas */
-    background-position: center; /* Puedes eliminar esta línea si deseas */
-    font-family: 'Recta';
-    background-color: #2e2d2d;
-    margin: 0;
-    padding: 0; /* Elimina el relleno para que el fondo cubra toda la pantalla */
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ajusta el contenedor al 100% de la altura de la ventana */
-    overflow: hidden; /* Evita el desbordamiento del contenido */
-    background-image: url("C:/Users/imano/imanol-app/src/assets/media/pexels-danielabsi-952670.jpg");
+
+
+.paralax{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+.section1 {    
+    display: flex; 
+    flex-direction: column;
+    font-family: 'Recta';
+    background-color: #2e2d2d;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta el contenedor al 100% de la altura de la ventana */
+    overflow: hidden; /* Evita el desbordamiento del contenido */
+    background-image: url("C:/Users/imano/imanol-app/src/assets/media/retrato-abuela-rebelde-es-tamano-medio.jpg");
+    
+}
+.logo{
+    width: 20%; /* Establece el ancho del contenedor al 20% de la pantalla */
+}
+
+.section2{
+    display: flex; 
+    flex-direction: column;
+    font-family: 'Recta';
+    background-color: #2e2d2d;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta el contenedor al 100% de la altura de la ventana */
+    overflow: hidden; /* Evita el desbordamiento del contenido */
+    background-image: url("C:/Users/imano/imanol-app/src/assets/media/retrato-blanco-negro-mujer-tatuajes-cuerpo.jpg");
+    
+}
+
+.section3{
+    display: flex; 
+    flex-direction: column;
+    font-family: 'Recta';
+    background-color: #2e2d2d;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta el contenedor al 100% de la altura de la ventana */
+    overflow: hidden; /* Evita el desbordamiento del contenido */
+    background-image: url("C:/Users/imano/imanol-app/src/assets/media/retrato-monocromo-hombre-tatuajes.jpg");
+    
+}
+
+
 h1 {
-    color: rgb(211, 205, 205);
+    color: rgb(255, 255, 255);
     margin-bottom: 10px;
     font-family: 'Recta';
     font-size: 3em;
@@ -31,27 +71,29 @@ h2 {
     padding: 10px;
 }
 
-.logo {
+.texto{
+    color: rgb(255, 255, 255);
     margin-bottom: 10px;
-    border-radius: 20px;
-    border: 2px solid;
-    border-color:#000000;
+    font-family: 'Recta';
+    font-size: 2em;
+    padding: 10px;
 }
 
-.boton-intro {
-    display: inline-block;
-    background-color: #000000;
-    color: #fff;
-    font-size: 1em;
+button {
+    width: 30%;
+    background-color:  #000000;
+    color: white;
     padding: 10px 20px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-    border: 2px;
-    border-color:antiquewhite
+    cursor: pointer;
+    font-family: 'Recta';
+    font-size: 20px;
+}
+button:hover{  
+    background-color: #5c5d5d;
 }
 
-.boton-intro:hover {
-    background-color: #746c68;
+.boton {
+    text-decoration: underline; 
 }

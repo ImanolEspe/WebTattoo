@@ -44,6 +44,4 @@ export class Tatuadores2Component {
     console.log(nombre)
     this.router.navigate(['/disenos'], {queryParams: {nombre: nombre}});
   }
-  
-
 }

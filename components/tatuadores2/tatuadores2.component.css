@@ -1,15 +1,20 @@
+
 .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(36, 35, 35);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("C:/Users/imano/imanol-app/src/assets/media/retrato-monocromo-hombre-tatuajes1.jpg");
     min-height: 100vh; /* Ajusta la altura mínima al 100% del viewport */
     position: relative; /* Para que los elementos absolutamente posicionados respeten este contenedor */
 }
 
 .contenedor-imagen {
-    width: 45%; /* Ajusta el ancho de las imágenes para dispositivos grandes */
+    width: 22%; /* Ajusta el ancho de las imágenes para dispositivos grandes */
     margin: 10px; /* Añade un margen entre las imágenes */
     position: relative; /* Establece el contexto de posicionamiento para los elementos internos */
 }

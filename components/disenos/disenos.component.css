@@ -5,8 +5,12 @@
     align-items: center;
     background-color: rgb(36, 35, 35);
     justify-content:space-around;
-    padding: 20px
-    
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("C:/Users/imano/imanol-app/src/assets/media/retrato-monocromo-hombre-tatuajes1.jpg");
 }
 
 .designsCreated,

@@ -2,8 +2,9 @@
 
 header {
     background-color: #000000;
-    padding: 10px 0;
-    
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
   }
 
   nav ul {

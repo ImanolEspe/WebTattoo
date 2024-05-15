@@ -4,6 +4,7 @@ import { Tatuadores2Component } from './components/tatuadores2/tatuadores2.compo
 import { DisenosComponent } from './components/disenos/disenos.component';
 import { CitasComponent } from './components/citas1/citas.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { ClientesComponent } from './components/clientes/clientes.component';
 
 
 
@@ -32,6 +33,9 @@ export const routes: Routes = [
     {
         path: 'contacto',
         component: ContactoComponent
+    },
+    {
+        path: 'clientes',
+        component: ClientesComponent
     }
-    
 ];
