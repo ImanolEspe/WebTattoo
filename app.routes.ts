@@ -5,6 +5,7 @@ import { DisenosComponent } from './components/disenos/disenos.component';
 import { CitasComponent } from './components/citas1/citas.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -37,5 +38,9 @@ export const routes: Routes = [
     {
         path: 'clientes',
         component: ClientesComponent
+    },
+    {
+        path: 'login',
+        component: LoginComponent
     }
 ];

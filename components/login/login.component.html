@@ -1,0 +1,8 @@
+<div>
+    <form [formGroup]="formulario">
+        <input type="text" formControlName="user">
+        <input type="password" formControlName="password">
+        <button (click) = "click()" >Acceder</button>
+    </form>
+    <div *ngIf="this.mostrar"><p>Usuario o contraseña incorrectos</p></div>
+</div>
